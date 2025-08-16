@@ -1,24 +1,28 @@
 {
-    "chosingAlgorithm": "Specific Items will post ONLY what you tell it to, same ad every time. Smart algo generates an ad. You can ONLY enable one, specific or smart. For support join https://discord.gg/M58R3PR9Wv",
-    "specificItems": {
+  "accounts": [
+    {
+      "name": "Main",
+      "robloxId": "123456",
+      "token": "_Roliverification_cookie_here",
+      "choosingAlgorithm": "Specific",
+      "specificItems": {
         "enabled": true,
         "sendingItems": [
-            "10159600649",
-            "9255011",
-            "2569005011",
-            "564449640"
+          "10159600649",
+          "9255011",
+          "2569005011",
+          "564449640"
         ],
-        "receivingItems": [
-        ],
+        "receivingItems": [],
         "tags": [
-            "any",
-            "downgrade",
-            "rap",
-            "demand"
+          "any",
+          "downgrade",
+          "rap",
+          "demand"
         ],
         "_tagOptions": ["adds", "upgrade", "downgrade", "any", "wishlist", "demand", "rares", "rap", "robux", "projecteds"]
-    },
-    "smartAlgo": {
+      },
+      "smartAlgo": {
         "enabled": false,
         "upgrade": false,
         "downgrade": false,
@@ -28,8 +32,8 @@
         "minReceiveItems": 2,
         "maxReceiveItems": 4,
         "blacklisted": [
-            "BLACKLISTED_ITEM_ID_1",
-            "BLACKLISTED_ITEM_ID_2"
+          "BLACKLISTED_ITEM_ID_1",
+          "BLACKLISTED_ITEM_ID_2"
         ],
         "minTotalSend": 30000,
         "maxTotalSend": 1000000,
@@ -42,9 +46,46 @@
         "minDemand": 2,
         "minItemValueSend": 5000,
         "minItemValueRequest": 5000,
-        "tags": [
-            "adds"
-        ],
+        "tags": ["adds"],
         "_tagOptions": ["adds", "upgrade", "downgrade", "any", "wishlist", "demand", "rares", "rap", "robux", "projecteds"]
+      }
+    },
+    {
+      "name": "Alt1",
+      "robloxId": "987654",
+      "token": "_Roliverification_cookie_here",
+      "choosingAlgorithm": "Smart",
+      "specificItems": {
+        "enabled": false,
+        "sendingItems": [],
+        "receivingItems": [],
+        "tags": [],
+        "_tagOptions": ["adds", "upgrade", "downgrade", "any", "wishlist", "demand", "rares", "rap", "robux", "projecteds"]
+      },
+      "smartAlgo": {
+        "enabled": true,
+        "upgrade": true,
+        "downgrade": false,
+        "any": true,
+        "minSendItems": 2,
+        "maxSendItems": 3,
+        "minReceiveItems": 1,
+        "maxReceiveItems": 3,
+        "blacklisted": [],
+        "minTotalSend": 10000,
+        "maxTotalSend": 500000,
+        "minTotalRequestValue": 10000,
+        "maxTotalRequestValue": 50000000,
+        "minUpgPercent": 5,
+        "maxUpgPercent": 10,
+        "minDgPercent": 0,
+        "maxDgPercent": 3,
+        "minDemand": 1,
+        "minItemValueSend": 1000,
+        "minItemValueRequest": 1000,
+        "tags": ["upgrade"],
+        "_tagOptions": ["adds", "upgrade", "downgrade", "any", "wishlist", "demand", "rares", "rap", "robux", "projecteds"]
+      }
     }
+  ]
 }
