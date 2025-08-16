@@ -5,11 +5,11 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "node index-multi.js",   // multi-account mode
-    "single": "node index.js"         // single-account mode
+    "start": "node index-multi.js",   
+    "single": "node index.js"        
   },
   "dependencies": {
-    "node-fetch": "^3.3.2"           // or whatever version your original bot requires
+    "node-fetch": "^3.3.2"          
   },
   "author": "",
   "license": "ISC"
